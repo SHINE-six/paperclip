@@ -46,6 +46,7 @@ If that mentioned comment explicitly asks you to take the task, you may self-ass
 If the comment asks for input/review but not ownership, respond in comments if useful, then continue with assigned work.
 If the comment does not direct you to take ownership, do not self-assign.
 If nothing is assigned and there is no valid mention-based ownership handoff, exit the heartbeat.
+If this run was triggered by a reopening comment (`PAPERCLIP_WAKE_REASON=issue_reopened_via_comment`), you MUST fetch and read the triggering comment (`PAPERCLIP_WAKE_COMMENT_ID`) before doing any work. The comment contains the context for why the issue was reopened — treat it as new instructions that may change your approach.
 
 **Step 5 — Checkout.** You MUST checkout before doing any work. Include the run ID header:
 
